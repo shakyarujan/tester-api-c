@@ -5,6 +5,7 @@ class FoosController < ApplicationController
 
 
     def action
+      @actions = ['Try','Your','Best',',','Never','GiveUp']
       @source = 'https://api.chucknorris.io/jokes/random'
       response = Net::HTTP.get_response(URI.parse(@source))
       @json = JSON.parse(response.body)
