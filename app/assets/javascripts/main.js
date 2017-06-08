@@ -1,6 +1,5 @@
 /* global $ */
-/* global localStorage */
-/* global $window */
+
 // $(function(){
 //   $.ajax({
 //     url: 'https://api.chucknorris.io/jokes/random?',
@@ -9,7 +8,9 @@
 //   .done(function(data){
 //     console.log(data);
 //   });
-// })
+// });
+
+
 
 // ---------About - pages ------------
 $(document).ready(function(){
