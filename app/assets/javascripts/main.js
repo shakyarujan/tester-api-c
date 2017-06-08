@@ -16,7 +16,7 @@
 
 $(document).ready(function(){
     $('#username').on('keyup',function(e){
-      var username = e.target.value;
+      var username = e.target.val;
       
        //Make request to github
        
@@ -92,3 +92,17 @@ $(document).ready(function(){
    
     
 });
+
+// <---end---->
+
+$(document).ready(function (){
+    $('#username').keyup(function(event) {
+        // 27 is key code of ESC
+        if (event.keyCode == 27) {
+            $('#username').val('shakyarujan');
+            // Loose focus on input field
+            $('#username').blur();
+        }
+    });
+});
+

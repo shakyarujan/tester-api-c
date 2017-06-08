@@ -11,7 +11,4 @@ class FoosController < ApplicationController
       @json = JSON.parse(response.body)
     end
     
-    def index
-    end
-    
 end
