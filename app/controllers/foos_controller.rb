@@ -10,7 +10,7 @@ class FoosController < ApplicationController
       response = Net::HTTP.get_response(URI.parse(@source))
       @json = JSON.parse(response.body)
       respond_to do |format|
-        format.html { render  html: "" }
+        format.html { render 'foos/action' }
         format.json { render json: @json }
         format.xml { render xml: @json }
       end
